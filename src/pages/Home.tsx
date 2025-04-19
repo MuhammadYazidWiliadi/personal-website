@@ -9,21 +9,21 @@ const Home: React.FC = () => {
   const projectData = [
     {
       title: 'WebStudiow',
-      description: 'React & Node.js application with real-time analytics.',
+      description: 'A full‑featured Website Development Services dashboard for managing products, orders, customers, and real‑time sales analytics.',
       image: '/projects/webstudiow.png',
       tags: ['Laravel', 'Tailwind CSS', 'Mysql'],
       link: 'https://Wesclic.studio'
     },
     {
       title: 'Kopo Finance App',
-      description: 'Secure and elegant mobile banking interface.',
+      description: 'A finance manager for tracking expenses, setting budgets, and viewing interactive charts of your spending habits.',
       image: '/projects/kopo.png',
       tags: ['React Native', 'Mysql', 'Python'],
       link: 'https://manajemen-keuangan-client.vercel.app/dashboard'
     },
     {
       title: 'DBS Capstone App',
-      description: 'Full-stack application for travel accommodations.',
+      description: 'A E-Commerce accommodation platform with sales analytics, user reviews, host dashboard, and integrated payment processing.',
       image: '/projects/dbs.jpg',
       tags: ['TypeScript', 'Tailwind CSS', 'Next.js'],  
       link: '#'

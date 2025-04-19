@@ -11,7 +11,7 @@ const Projects: React.FC = () => {
     {
       id: 'webstudiow',
       title: 'WebStudiow',
-      description: 'A full‑featured e‑commerce dashboard for managing products, orders, customers, and real‑time sales analytics.',
+      description: 'A full‑featured Website Development Services dashboard for managing products, orders, customers, and real‑time sales analytics.',
       tags: ['Laravel', 'Tailwind CSS', 'MySQL', 'WordPress'],
     image: '/projects/webstudiow.png',
       link: 'https://example.com/ecommerce',
@@ -21,7 +21,7 @@ const Projects: React.FC = () => {
     {
       id: 'finance',
       title: 'Kopo Finance App',
-      description: 'A mobile finance manager for tracking expenses, setting budgets, and viewing interactive charts of your spending habits.',
+      description: 'A finance manager for tracking expenses, setting budgets, and viewing interactive charts of your spending habits.',
       tags: ['React Native', 'MySQL', 'Figma', 'TypeScript'],
       image: '/projects/kopo.png',
       link: 'https://manajemen-keuangan-client.vercel.app/dashboard',
