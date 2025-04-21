@@ -4,6 +4,7 @@ import TypingEffect from '@/components/TypingEffect';
 import SocialLinks from '@/components/SocialLinks';
 import { ArrowDownCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Footer from '@/components/Footer';
 
 const Home: React.FC = () => {
   const projectData = [
@@ -184,6 +185,8 @@ const Home: React.FC = () => {
           </motion.div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };
