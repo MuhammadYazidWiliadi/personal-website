@@ -9,14 +9,13 @@ import {
   Cpu
 } from 'lucide-react';
 import SocialLinks from '@/components/SocialLinks';
+import Footer from '@/components/Footer';
 
 const About: React.FC = () => {
-  // *** FORCE SCROLL TO TOP ON MOUNT ***
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
   }, []);
 
-  // Skills data
   const [skills] = useState([
     { name: 'HTML/CSS', level: 90 },
     { name: 'JavaScript', level: 85 },
@@ -27,7 +26,6 @@ const About: React.FC = () => {
     { name: 'Laravel', level: 88 }
   ]);
 
-  // Tools data
   const tools = [
     { name: 'VSCode', icon: Code },
     { name: 'Figma', icon: PaintBucket },
@@ -37,13 +35,12 @@ const About: React.FC = () => {
     { name: 'Docker', icon: Cpu }
   ];
 
-  // Scroll-triggered opacity transforms
   const { scrollYProgress } = useScroll();
   const opacitySection2 = useTransform(scrollYProgress, [0.1, 0.2], [0, 1]);
   const opacitySection3 = useTransform(scrollYProgress, [0.4, 0.5], [0, 1]);
 
   return (
-    <div className="pt-24 pb-16">
+    <div className="pt-24">
       {/* Profile Section */}
       <section className="py-16">
         <div className="container mx-auto px-6">
@@ -211,6 +208,9 @@ const About: React.FC = () => {
           </div>
         </div>
       </motion.section>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
