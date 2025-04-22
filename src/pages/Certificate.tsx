@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
+import Footer from '@/components/Footer';
 
 interface Certificate {
   id: number;
@@ -74,8 +75,9 @@ const Certificate: React.FC = () => {
   const filtered = certificates.filter(c => c.category === selectedCategory);
 
   return (
-    <div className="min-h-screen pt-28 pb-16 px-6 md:px-8 lg:px-12">
-      <div className="max-w-6xl mx-auto">
+    <div className="flex flex-col min-h-screen">
+      <main className="flex-grow pt-28 pb-16 px-6 md:px-8 lg:px-12">
+        <div className="max-w-6xl mx-auto">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -201,6 +203,8 @@ const Certificate: React.FC = () => {
           )}
         </AnimatePresence>
       </div>
+      </main>
+      <Footer />
     </div>
   );
 };

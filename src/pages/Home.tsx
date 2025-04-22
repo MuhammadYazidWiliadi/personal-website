@@ -51,7 +51,7 @@ const Home: React.FC = () => {
               </h1>
               <div className="text-3xl text-cyan-soft font-light h-12 mb-4">
                 <TypingEffect 
-                  texts={["Hai", "Hello", "Bonjour", "Konnichiwa", "Annyeong"]} 
+                  texts={["Hai", "Hello", "Bonjour", "Konnichiwa", "Annyeong", "Nǐ hǎo", "Ciao"]} 
                   speed={100} 
                   pause={1500}
                 />

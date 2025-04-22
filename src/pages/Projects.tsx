@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Footer from '@/components/Footer';
 
 const Projects: React.FC = () => {
   const [filter, setFilter] = useState('all');
@@ -17,7 +18,7 @@ const Projects: React.FC = () => {
       link: 'https://example.com/ecommerce',
       github: 'private',
       category: 'fullstack'
-    },
+  },
     {
       id: 'finance',
       title: 'Kopo Finance App',
@@ -83,8 +84,8 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <div className="pt-24 pb-16">
-      <div className="container mx-auto px-6">
+    <div className="min-h-screen flex flex-col">
+      <div className="flex-grow pt-24 pb-24">
         <motion.div
           initial={{ opacity: 0, letterSpacing: '0.25em' }}
           animate={{ opacity: 1, letterSpacing: 'normal' }}
@@ -181,6 +182,7 @@ const Projects: React.FC = () => {
           </AnimatePresence>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

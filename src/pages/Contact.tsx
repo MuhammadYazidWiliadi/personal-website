@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Send, Loader } from 'lucide-react';
 import emailjs from '@emailjs/browser';
+import Footer from '@/components/Footer';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -129,6 +130,7 @@ const Contact: React.FC = () => {
             </div>
           </motion.div>
         )}
+      <Footer />
       </AnimatePresence>
     </div>
   );
