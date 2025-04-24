@@ -15,7 +15,7 @@ const Projects: React.FC = () => {
       description: 'A full‑featured Website Development Services dashboard for managing products, orders, customers, and real‑time sales analytics.',
       tags: ['Laravel', 'Tailwind CSS', 'MySQL', 'WordPress'],
     image: '/projects/webstudiow.png',
-      link: 'https://example.com/ecommerce',
+      link: 'https://Wesclic.studio',
       github: 'private',
       category: 'fullstack'
   },
