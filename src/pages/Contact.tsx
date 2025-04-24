@@ -78,8 +78,8 @@ const Contact: React.FC = () => {
   const errorClasses = "animate-shake text-red-400 text-sm mt-1";
 
   return (
-    <div className="pt-24 pb-16">
-      <div className="container mx-auto px-6">
+    <div className="min-h-screen flex flex-col">
+      <div className="flex-grow pt-24 pb-24">
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }} className="max-w-3xl mx-auto">
           <motion.div initial={{ opacity: 0, letterSpacing: '0.25em' }} animate={{ opacity: 1, letterSpacing: 'normal' }} transition={{ duration: 0.8, ease: "easeOut" }} className="text-center mb-12">
             <h1 className="text-4xl font-serif mb-4">Get In Touch</h1>
@@ -130,8 +130,8 @@ const Contact: React.FC = () => {
             </div>
           </motion.div>
         )}
-      <Footer />
       </AnimatePresence>
+      <Footer />
     </div>
   );
 };
