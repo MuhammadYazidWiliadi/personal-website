@@ -9,7 +9,7 @@ interface Certificate {
   issuer: string;
   image: string;
   date: string;
-  category: 'Coding' | 'Religious';
+  category: 'Coding' | 'Religious' | 'Others';
 }
 
 const certificates: Certificate[] = [
@@ -25,10 +25,7 @@ const certificates: Certificate[] = [
   { id: 9, title: "Frontend Development", issuer: "Wantek", image: "/certicates/code/cer9.jpg", date: "November 2023", category: 'Coding' },
   { id: 10, title: "Internship Program", issuer: "Wesclic Indonesia", image: "/certicates/code/cer10.png", date: "June 2024", category: 'Coding' },
   { id: 11, title: "React", issuer: "MySkill", image: "/certicates/code/cer11.png", date: "March 2025", category: 'Coding' },
-  { id: 12, title: "React", issuer: "MySkill", image: "/certicates/code/cer12.png", date: "March 2025", category: 'Coding' },
-  { id: 13, title: "React", issuer: "MySkill", image: "/certicates/code/cer13.png", date: "March 2025", category: 'Coding' },
-  { id: 14, title: "React", issuer: "MySkill", image: "/certicates/code/cer14.png", date: "March 2025", category: 'Coding' },
-  { id: 15, title: "React", issuer: "MySkill", image: "/certicates/code/cer15.png", date: "March 2025", category: 'Coding' },
+
 
   // Religious certicates
   { id: 16, title: "MQK Saffinah", issuer: "Al-Riyadl", image: "/certicates/religion/ser1.jpg", date: "March 2021", category: 'Religious' },
@@ -42,11 +39,18 @@ const certificates: Certificate[] = [
   { id: 24, title: "Tahfidz Fathul Athfal", issuer: "Al-Riyadl", image: "/certicates/religion/ser9.jpg", date: "May 2022", category: 'Religious' },
   { id: 25, title: "Lulus Amsilati", issuer: "Al-Riyadl", image: "/certicates/religion/ser10.jpg", date: "February 2021", category: 'Religious' },
   { id: 26, title: "Olimpiadi PAIBP", issuer: "SMK Wikrama Bogor", image: "/certicates/religion/ser11.png", date: "November 2023", category: 'Religious' },
+
+  // others certificates
+  { id: 30, title: "Basic English", issuer: "MySKill", image: "/certicates/others/cer1.png", date: "April 2025", category: 'Others' },
+  { id: 31, title: "TOEFL ITP", issuer: "MySKill", image: "/certicates/others/cer2.png", date: "April 2025", category: 'Others' },
+  { id: 32, title: "TOEFL IBT", issuer: "MySKill", image: "/certicates/others/cer3.png", date: "April 2025", category: 'Others' },
+  { id: 33, title: "English Discoveries", issuer: "ETS & Edusoft", image: "/certicates/others/cer4.jpg", date: "November 2024", category: 'Others' },
+  { id: 34, title: "Guitar", issuer: "Yousician", image: "/certicates/others/cer5.jpg", date: "April 2025", category: 'Others' },
 ];
 
 
 
-const categories = ['Coding', 'Religious'] as const;
+const categories = ['Coding', 'Religious', 'Others'] as const;
 
 const Certificate: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<typeof categories[number]>('Coding');
