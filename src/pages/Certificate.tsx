@@ -93,7 +93,7 @@ const Certificate: React.FC = () => {
             Certificates
           </h1>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            A collection of certifications and achievements, both technical and spiritual.
+          A curated showcase of academic, technical, spiritual, and personal achievement certificates across various domains.
           </p>
         </motion.div>
 
