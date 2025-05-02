@@ -74,20 +74,21 @@ const Contact: React.FC = () => {
       });
   };
 
-  const inputClasses = "w-full bg-transparent border-b border-gray-600 py-3 px-1 text-gray-300 focus:outline-none focus:border-image-linear-gradient focus:border-cyan-soft transition-colors";
+  const inputClasses = "w-full bg-transparent border-b border-gray-600 py-2 px-2 text-sm sm:text-base text-gray-300 focus:outline-none focus:border-cyan-soft transition-colors";
+
   const errorClasses = "animate-shake text-red-400 text-sm mt-1";
 
   return (
     <div className="min-h-screen flex flex-col">
       <div className="flex-grow pt-24 pb-24">
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }} className="max-w-3xl mx-auto">
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }} className="max-w-3xl mx-auto px-4">
           <motion.div initial={{ opacity: 0, letterSpacing: '0.25em' }} animate={{ opacity: 1, letterSpacing: 'normal' }} transition={{ duration: 0.8, ease: "easeOut" }} className="text-center mb-12">
             <h1 className="text-4xl font-serif mb-4">Get In Touch</h1>
             <div className="w-20 h-1 bg-cyan-soft mx-auto mb-6"></div>
             <p className="text-gray-400">Have a question or want to work together? Feel free to contact me!</p>
           </motion.div>
 
-          <motion.form onSubmit={handleSubmit} className="space-y-8" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}>
+          <motion.form onSubmit={handleSubmit} className="space-y-6 sm:space-y-8" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}>
             <div>
               <input type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} className={inputClasses} />
               {errors.name && <p className={errorClasses}>{errors.name}</p>}
