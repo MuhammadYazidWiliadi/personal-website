@@ -10,7 +10,7 @@ interface SocialLinksProps {
 const SocialLinks: React.FC<SocialLinksProps> = ({ className = '' }) => {
   const socialItems = [
     { icon: Github, href: 'https://github.com/MuhammadYazidWiliadi', ariaLabel: 'GitHub Profile' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/muhammad-yazid-wiliadi-2188982a5/', ariaLabel: 'LinkedIn Profile' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/wiliadi/', ariaLabel: 'LinkedIn Profile' },
     { icon: Instagram, href: 'https://www.instagram.com/vlykz_/', ariaLabel: 'Twitter Profile' },
     { icon: Mail, href: 'mailto:contact@wiliadiyaziiid@gmail.com', ariaLabel: 'Email Contact' },
   ];
