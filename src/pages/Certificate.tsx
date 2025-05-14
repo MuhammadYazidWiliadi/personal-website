@@ -25,6 +25,7 @@ const certificates: Certificate[] = [
   { id: 9, title: "Frontend Development", issuer: "Wantek", image: "/certicates/code/cer9.jpg", date: "November 2023", category: 'Coding' },
   { id: 10, title: "Internship Program", issuer: "Wesclic Indonesia", image: "/certicates/code/cer10.png", date: "June 2024", category: 'Coding' },
   { id: 11, title: "React", issuer: "MySkill", image: "/certicates/code/cer11.png", date: "March 2025", category: 'Coding' },
+  { id: 12, title: "Completed DBS", issuer: "DBS, Dicoding", image: "/certicates/code/cer12.png", date: "May 2025", category: 'Coding' },
 
 
   // Religious certicates
