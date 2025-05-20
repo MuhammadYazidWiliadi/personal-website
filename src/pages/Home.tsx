@@ -61,19 +61,34 @@ const Home: React.FC = () => {
               <SocialLinks />
               
               <motion.div 
-                className="mt-12"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1, duration: 0.6 }}
+              className="mt-12 flex gap-4 flex-wrap"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1, duration: 0.6 }}
+            >
+              <Link 
+                to="/about" 
+                className="btn-gradient px-6 py-3 rounded-lg inline-flex items-center space-x-2 hover:scale-105 transition-transform duration-300"
               >
-                <Link 
-                  to="/about" 
-                  className="btn-gradient px-6 py-3 rounded-lg inline-flex items-center space-x-2 hover:scale-105 transition-transform duration-300"
+                <span>Learn More</span>
+                <ArrowDownCircle size={16} />
+              </Link>
+
+              <div className="group relative">
+                <a
+                  href="cv-yazidwiliadi.pdf"
+                  download
+                  className="px-6 py-3 rounded-lg inline-flex items-center space-x-2 border border-cyan-soft/50 text-cyan-soft hover:bg-cyan-soft/10 transition-colors duration-300 hover:scale-105"
                 >
-                  <span>Learn More</span>
+                  <span>Download CV</span>
                   <ArrowDownCircle size={16} />
-                </Link>
-              </motion.div>
+                </a>
+                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-dark-navy/90 text-cyan-soft text-xs px-3 py-1 rounded-md whitespace-nowrap pointer-events-none">
+                Open to hire
+                  <div className="absolute bottom-0 left-1/2 -mb-1 -translate-x-1/2 w-2 h-2 bg-dark-navy/90 rotate-45"></div>
+                </div>
+              </div>
+            </motion.div>
             </motion.div>
 
             {/* Tech Graphic Section */}
