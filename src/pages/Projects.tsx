@@ -75,7 +75,7 @@ const Projects: React.FC = () => {
       id: 'novel',
       title: 'Beaten Into Kindness',
       description: 'An Official Website of my own Novel "Beaten Into Kindness".',
-      tags: ['TypeScript', 'Tailwind CSS', 'HeroIcons'],
+      tags: ['TypeScript', 'Tailwind CSS', 'Supabase'],
       image: '/projects/novel.png',
       link: 'https://beatenintokindness.vercel.app/',
       github: 'https://github.com/MuhammadYazidWiliadi/beaten-into-kindness',

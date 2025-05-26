@@ -16,11 +16,11 @@ const Home: React.FC = () => {
       link: 'https://Wesclic.studio'
     },
     {
-      title: 'Kopo Finance App',
-      description: 'A finance manager for tracking expenses, setting budgets, and viewing interactive charts of your spending habits.',
-      image: '/projects/kopo.png',
-      tags: ['React Native', 'Mysql', 'Python'],
-      link: 'https://manajemen-keuangan-client.vercel.app/dashboard'
+      title: 'Beaten Into Kindness',
+      description: 'A fully responsive and modern web application for showcasing my original novel "Beaten Into Kindness" by Muhammad Yazid Wiliadi.',
+      image: '/projects/novel.png',
+      tags: ['TypeScript', 'Tailwind CSS', 'Supabase'],
+      link: 'https://beatenintokindness.vercel.app/'
     },
     {
       title: 'DBS Capstone App',
