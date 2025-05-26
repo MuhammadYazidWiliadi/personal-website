@@ -4,6 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Footer from '@/components/Footer';
+import { title } from 'process';
+import { Description } from '@radix-ui/react-toast';
 
 const Projects: React.FC = () => {
   const [filter, setFilter] = useState('all');
@@ -68,6 +70,16 @@ const Projects: React.FC = () => {
       link: '#',
       github: 'https://github.com/MuhammadYazidWiliadi/dbs-notesApp-restfulAPI',
       category: 'backend'
+    },
+    {
+      id: 'novel',
+      title: 'Beaten Into Kindness',
+      description: 'An Official Website of my own Novel "Beaten Into Kindness".',
+      tags: ['TypeScript', 'Tailwind CSS', 'HeroIcons'],
+      image: '/projects/novel.png',
+      link: 'https://beatenintokindness.vercel.app/',
+      github: 'https://github.com/MuhammadYazidWiliadi/beaten-into-kindness',
+      category: 'fullstack'
     }
   ];
   
